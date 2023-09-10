@@ -8,7 +8,7 @@ KreditDulu requires Credit Scoring through the utilization of Machine Learning, 
 **Expected Output**: \
 KreditDulu can use a machine learning model that can classify the credit score.
 
-**Result**: \
+**Conclusion (Result)**: \
 The model with combination of manual and alternate data could have business impact of $970,450 due to its 78% performance in predicting credit scoring for each borrower, which enables provision of fair interest rate and reduce risk of potential default. As the result, KreditDulu can use the model as a more effective tool to do credit scoring.
 
 **Recommendation**: \
