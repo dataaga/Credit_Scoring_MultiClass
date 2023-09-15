@@ -17,25 +17,17 @@ st.set_page_config(page_title='KreditDulu Credit Scoring App', page_icon='💳',
 
 ###LOAD PHASE###
 
-path = os.path.dirname(__file__)
-folder_path = os.path.join(path,'../models')
+# Define the base directory where your models are stored
+base_path = '../models'
 
-def load_model(name, base_path='../models'):
-    """
-    Loads a joblib object.
-    
-    Args:
-    - name (str): Name of the obj file (without extensions).
-    - base_path (str, optional): Base directory where the models are stored. Defaults to '../models'.
-    
-    Returns:
-    - The loaded object from the joblib file.
-    """
-    path_obj = os.path.join(base_path, f"{name}.obj")
-    return joblib.load(path_obj)
+# Define file paths for scaler and model using os.path.join
+scaler_path = os.path.join(base_path, 'scaler_mockup.obj')
+model_path = os.path.join(base_path, 'XGB_creditscoring_final_mockup.obj')
 
-scaler = load_model(scaler_mockup)
-model = load_model(XGB_creditscoring_final_mockup)
+# Load the scaler and model using joblib
+scaler = joblib.load(scaler_path)
+model = joblib.load(model_path)
+
 
 ###INITIAL PHASE###
 
