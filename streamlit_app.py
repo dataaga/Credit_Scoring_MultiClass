@@ -17,14 +17,8 @@ st.set_page_config(page_title='KreditDulu Credit Scoring App', page_icon='💳',
 
 ###LOAD PHASE###
 
-path = '../models'
-
-def obj_load(name):
-    path_obj = os.path.join(path,'../models/'+name+'.obj')
-    return  pickle.load(open(path_obj, 'rb'))
-
-scaler = obj_load('scaler_mockup')
-model = obj_load('XGB_creditscoring_final_mockup')
+scaler = pickle.load(open('scaler_mockup.obj', 'rb'))
+model = pickle.load(open('XGB_creditscoring_final_mockup.obj', 'rb'))
 
 
 
