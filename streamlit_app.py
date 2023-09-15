@@ -2,7 +2,6 @@ import streamlit as st
 import pickle
 import joblib
 import pandas as pd
-from zipfile import ZipFile
 import os
 from src import transform_resp
 import seaborn as sns
