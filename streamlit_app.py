@@ -17,7 +17,7 @@ st.set_page_config(page_title='KreditDulu Credit Scoring App', page_icon='💳',
 
 ###LOAD PHASE###
 
-path = os.path.dirname(os.path.abspath(__file__))
+path_obj = '/mount/src/credit_scoring_multiclass/../models/scaler_mockup.obj'
 
 def obj_load(name):
     path_obj = os.path.join(path,'../models/'+name+'.obj')
