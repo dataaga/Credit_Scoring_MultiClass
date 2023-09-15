@@ -34,8 +34,8 @@ def load_model(name, base_path='../models'):
     path_obj = os.path.join(base_path, f"{name}.obj")
     return joblib.load(path_obj)
 
-scaler = load_model('scaler_mockup')
-model = load_model('XGB_creditscoring_final_mockup')
+scaler = load_model(scaler_mockup)
+model = load_model(XGB_creditscoring_final_mockup)
 
 ###INITIAL PHASE###
 
