@@ -1,3 +1,5 @@
+Note: *Streamlit-Credit Scoring Prediction App just mockup to show the simulation which some feature has to be dropped because some technical issues.
+
 # Credit Scoring Prediction
 **Background Project**: \
 KreditDulu as Credit Company using Machine Learning (ML) based on Alternate Data + Manual (Traditional) Credit Data to help them deciding credit scoring for each borrower in order to enables provision of fair interest rate and reduce risk of potential default (also collections stage to assess how likely a customer in collections is to pay back their debt).
