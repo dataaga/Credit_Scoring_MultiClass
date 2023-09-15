@@ -17,10 +17,7 @@ st.set_page_config(page_title='KreditDulu Credit Scoring App', page_icon='💳',
 
 ###LOAD PHASE###
 
-#scaler = pickle.load(open('scaler_mockup.obj', 'rb'))
-#model = pickle.load(open('XGB_creditscoring_final_mockup.obj', 'rb'))
-
-#--------------------------------------
+#------------------------------------------------------------------------#
 # Define the base directory where your models are stored
 base_path = '/mount/src/credit_scoring_multiclass/models'
 
@@ -31,7 +28,7 @@ model_path = os.path.join(base_path, 'XGB_creditscoring_final_mockup.obj')
 # Load the scaler and model using joblib
 scaler = joblib.load(scaler_path)
 model = joblib.load(model_path)
-#---------------------------------------
+#------------------------------------------------------------------------#
 
 ###INITIAL PHASE###
 
